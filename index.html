@@ -27,137 +27,128 @@
                     <!--Intro section-->
                     <div id="intro" class="card-body">
                         <h5 class="card-title">Intro</h5>
-                        <p class="card-text">The next following questions with help us narrow down what learning syle
-                            you are.<br>
+                        <p class="card-text">The next following questions with help us narrow down what your learning
+                            syle is.<br>
                             Answer them as honstly as possible to get an accurate result.
                         </p>
-                        <button type="button" class="btn btn-outline-success"
-                            onclick="Start()">Success</button>
+                        <button type="button" class="btn btn-outline-success" onclick="Start()">Start Quiz</button>
                     </div>
-                    <form is="quizform">
+                    <form id="quizform" required>
                         <!--Que 1-->
                         <div class="card">
                             <div id="que1" class="card-body">
-                                <h5 class="card-title">Question 1</h5>
+                                <h5 class="card-title">Question 1<br><br>When you work at solving a problem do you:</h5>
+                                <br>
                                 <div class="row justify-content-center">
-                                    <input type="radio" name="que1" id="a1" value=1 >
-                                    <label for="a1" class="text-center">a) read notes, read headings in a book, and look
-                                        at diagrams and illustrations</label>
+                                    <input type="radio" name="ques1" id="a1" value=1>
+                                    <label for="a1" class="text-center">&nbsp;a) make a list, organize the steps, and
+                                        check them off as they are done</label>
                                 </div>
                                 <div class="row justify-content-center">
-                                    <input type="radio" name="que1" id="a2" value=2>
-                                    <label for="a2">b) have someone ask you questions, or repeat facts silently to
-                                        yourself.</label>
+                                    <input type="radio" name="ques1" id="a2" value=2>
+                                    <label for="a2">&nbsp;b) make a few phone calls and talk to friends or
+                                        experts.</label>
                                 </div>
                                 <div class="row justify-content-center">
-                                    <input type="radio" name="que1" id="a3" value=3>
-                                    <label for="a3">c) write things out on index cards and make models or
-                                        diagrams.</label>
+                                    <input type="radio" name="ques1" id="a3" value=3>
+                                    <label for="a3">&nbsp;c) make a model of the problem or walk through all the steps
+                                        in your mind.</label>
                                 </div>
-                                <button type="button" class="btn btn-outline-success"
-                                    onclick="quest1()">Success</button>
+                                <button type="button" class="btn btn-outline-success" onclick="quest1()">Next</button>
                             </div>
                         </div>
-                            <!--Que 2-->
-                            <div class="card">
-                                <div id="que2" class="card-body">
-                                    <h5 class="card-title">Question 2</h5>
-                                    <div class="row justify-content-center">
-                                        <input type="radio" name="que2" id="a1" value=1>
-                                        <label for="a1" class="text-center">a) read notes, read headings in a book, and
-                                            look at diagrams and illustrations</label>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <input type="radio" name="que2" id="a2" value=2>
-                                        <label for="a2">b) have someone ask you questions, or repeat facts silently to
-                                            yourself.</label>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <input type="radio" name="que2" id="a3" value=3>
-                                        <label for="a3">c) write things out on index cards and make models or
-                                            diagrams.</label>
-                                    </div>
-                                    <button type="button" class="btn btn-outline-success"
-                                        onclick="quest2()">Success</button>
+                        <!--Que 2-->
+                        <div class="card">
+                            <div id="que2" class="card-body">
+                                <h5 class="card-title">Question 2<br><br>To learn how a computer works, would you
+                                    rather:</h5><br>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques2" id="a1" value=1>
+                                    <label for="a1" class="text-center">&nbsp;a) watch a movie about it</label>
                                 </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques2" id="a2" value=2>
+                                    <label for="a2">&nbsp;b) listen to someone explain it</label>
                                 </div>
-                                <!--Que 3-->
-                                <div class="card">
-                                    <div id="que3" class="card-body">
-                                        <h5 class="card-title">Question 3</h5>
-                                        <div class="row justify-content-center">
-                                            <input type="radio" name="que3" id="a1" value=1>
-                                            <label for="a1" class="text-center">a) read notes, read headings in a book,
-                                                and look at diagrams and illustrations</label>
-                                        </div>
-                                        <div class="row justify-content-center">
-                                            <input type="radio" name="que3" id="a2" value=2>
-                                            <label for="a2">b) have someone ask you questions, or repeat facts silently
-                                                to yourself.</label>
-                                        </div>
-                                        <div class="row justify-content-center">
-                                            <input type="radio" name="que3" id="a3" value=3>
-                                            <label for="a3">c) write things out on index cards and make models or
-                                                diagrams.</label>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-success"
-                                            onclick="quest3()">Success</button>
-                                    </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques2" id="a3" value=3>
+                                    <label for="a3">&nbsp;c) take the computer apart and try to figure it out for
+                                        yourself</label>
                                 </div>
-                                    <!--Que 4-->
-                                    <div  class="card">
-                                        <div id="que4" class="card-body">
-                                            <h5 class="card-title">Question 4</h5>
-                                            <div class="row justify-content-center">
-                                                <input type="radio" name="que4" id="a1" value=1>
-                                                <label for="a1" class="text-center">a) read notes, read headings in a
-                                                    book, and look at diagrams and illustrations</label>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <input type="radio" name="que4" id="a2" value=2>
-                                                <label for="a2">b) have someone ask you questions, or repeat facts
-                                                    silently to yourself.</label>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <input type="radio" name="que4" id="a3" value=3>
-                                                <label for="a3">c) write things out on index cards and make models or
-                                                    diagrams.</label>
-                                            </div>
-                                            <button type="button" class="btn btn-outline-success"
-                                                onclick="quest4()">Success</button>
-                                        </div>
-                                    </div>
-                                        <!--Que 5-->
-                                        <div class="card">
-                                            <div id="que5"class="card-body">
-                                                <h5 class="card-title">Question 5</h5>
-                                                <div class="row justify-content-center">
-                                                    <input type="radio" name="que5" id="a1" value=1>
-                                                    <label for="a1" class="text-center">a) read notes, read headings in
-                                                        a book, and look at diagrams and illustrations</label>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <input type="radio" name="que5" id="a2" value=2>
-                                                    <label for="a2">b) have someone ask you questions, or repeat facts
-                                                        silently to yourself.</label>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <input type="radio" name="que5" id="a3" value=3>
-                                                    <label for="a3">c) write things out on index cards and make models
-                                                        or diagrams.</label>
-                                                </div>
-                                                <button type="button" class="btn btn-outline-success"
-                                                    onclick="quest5()">Success</button>
-                                            </div>
-                                        </div>
+                                <button type="button" class="btn btn-outline-success" onclick="quest2()">Next</button>
+                            </div>
+                        </div>
+                        <!--Que 3-->
+                        <div class="card">
+                            <div id="que3" class="card-body">
+                                <h5 class="card-title">Question 3<br><br>What kind of restaurant would you rather not go
+                                    to?</h5><br>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques3" id="a1" value=1>
+                                    <label for="a1" class="text-center">&nbsp;a) one with the lights too bright</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques3" id="a2" value=2>
+                                    <label for="a2">&nbsp;b) one with the music too loud</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques3" id="a3" value=3>
+                                    <label for="a3">&nbsp;c) one with uncomfortable chairs</label>
+                                </div>
+                                <button type="button" class="btn btn-outline-success" onclick="quest3()">Next</button>
+                            </div>
+                        </div>
+                        <!--Que 4-->
+                        <div class="card">
+                            <div id="que4" class="card-body">
+                                <h5 class="card-title">Question 4<br><br>Which are you most likely to do when you are
+                                    happy?<br></h5>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques4" id="a1" value=1>
+                                    <label for="a1" class="text-center">&nbsp;a) grin</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques4" id="a2" value=2>
+                                    <label for="a2">&nbsp;b) shout with joy</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques4" id="a3" value=3>
+                                    <label for="a3">&nbsp;c) jump for joy</label>
+                                </div>
+                                <button type="button" class="btn btn-outline-success" onclick="quest4()">Next</button>
+                            </div>
+                        </div>
+                        <!--Que 5-->
+                        <div class="card">
+                            <div id="que5" class="card-body">
+                                <h5 class="card-title">Question 5<br><br>When you see the word "d - o - g", what do you
+                                    do first?</h5><br>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques5" id="a1" value=1>
+                                    <label for="a1" class="text-center">&nbsp;a) think of a picture of a particular
+                                        dog</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques5" id="a2" value=2>
+                                    <label for="a2">&nbsp;b) say the word "dog" to yourself silently</label>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <input type="radio" name="ques5" id="a3" value=3>
+                                    <label for="a3">&nbsp;c) sense the feeling of being with a dog (petting it, running
+                                        with it, etc.)</label>
+                                </div>
+                                <button type="button" class="btn btn-outline-success"
+                                    onclick="quest5()">Results</button>
+                            </div>
+                        </div>
                     </form>
                     <!--Results-->
                     <div id="results" class="card">
                         <div class="card-body">
                             <h5 class="card-title">Reuslts</h5>
                             <p class="card-text">You're learning style is:</p>
-                                <button type="button" class="btn btn-outline-success"
-                                                    onclick="back()">Success</button>
+                            <p class="text-center" id="result"></p>
+                            <button type="button" class="btn btn-outline-success" onclick="back()">Success</button>
                         </div>
                     </div>
                 </div>

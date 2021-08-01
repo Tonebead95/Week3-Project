@@ -39,8 +39,9 @@ function quest4() {
     document.getElementById("que4").style.display = "none";
     document.getElementById("que5").style.display = "inline-block";
 }
+
 function quest5() {
-    learningStyle();
+    learningStyle()
     document.getElementById("que5").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
 }
@@ -50,60 +51,60 @@ function back() {
 }
 
 function learningStyle() {
-    const radios1 = document.querySelectorAll('input[name="que1"]');
-    let que1value;
+    const radios1 = document.querySelectorAll('input[name="ques1"]');
+    let que1Value;
     for (const rb of radios1) {
         if (rb.checked) {
-            que1value = rb.value;
+            que1Value = rb.value;
             break;
         }
     }
 
-    const radios2 = document.querySelectorAll('input[name="que2"]');
-    let que2value;
+    const radios2 = document.querySelectorAll('input[name="ques2"]');
+    let que2Value;
     for (const rb of radios2) {
         if (rb.checked) {
-            que2value = rb.value;
+            que2Value = rb.value;
             break;
         }
-    };
-    const radios3 = document.querySelectorAll('input[name="que3"]');
-    let que3value;
+    }
+    const radios3 = document.querySelectorAll('input[name="ques3"]');
+    let que3Value;
     for (const rb of radios3) {
         if (rb.checked) {
-            que3value = rb.value;
+            que3Value = rb.value;
             break;
         }
-    };
-    const radios4 = document.querySelectorAll('input[name="que4"]');
-    let que4value;
+    }
+    const radios4 = document.querySelectorAll('input[name="ques4"]');
+    let que4Value;
     for (const rb of radios4) {
         if (rb.checked) {
-            que4value = rb.value;
+            que4Value = rb.value;
             break;
         }
-    };
-    const radios5 = document.querySelectorAll('input[name="que5"]');
-    let que5value;
+    }
+    const radios5 = document.querySelectorAll('input[name="ques5"]');
+    let que5Value;
     for (const rb of radios5) {
         if (rb.checked) {
-            que5value = rb.value;
+            que5Value = rb.value;
             break;
         }
-    };
+    }
 
-    let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
+    let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
 
-    if (result > 5) {
-        msg = "You answered mostly c you may have a kinesthetic learning style";
-      } else if (result >= 2.5) {
+    if (result > 2) {
+        msg = "You answered mostly c, you may have a kinesthetic learning style";
+      } else if (result >= 1.5) {
         msg = "You answered mostly b, you may have an auditory learning style";
       } else {
         msg = "You answered mostly a, you may have a visual learning style";
       }
 
-    document.getElementById("result").innerHTML = msg
+    document.getElementById("results").innerHTML = msg
 };
 
 
