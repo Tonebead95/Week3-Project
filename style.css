@@ -2,13 +2,9 @@ body {
     text-align: center;
 }
 
-p {
-    text-align: center;
-}
-
 #que1,#que2,#que3,#que4,#que5,#results {
     display:none;
-    width: 75%;
+    width: 100%;
 }
 .mainbox {
     position: absolute;
