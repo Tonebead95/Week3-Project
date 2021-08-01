@@ -43,6 +43,11 @@ function Start() {
     document.getElementById("que5").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
   }
+  function back() {
+    document.getElementById("results").style.display = "none";
+    document.getElementById("intro").style.display = "inline-block";
+  }
+
 
 
 
