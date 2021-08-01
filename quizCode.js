@@ -40,7 +40,7 @@ function quest4() {
     document.getElementById("que5").style.display = "inline-block";
 }
 function quest5() {
-    learningStyle()
+    learningStyle();
     document.getElementById("que5").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
 }
@@ -51,59 +51,59 @@ function back() {
 
 function learningStyle() {
     const radios1 = document.querySelectorAll('input[name="que1"]');
-    let qeu1value;
+    let que1value;
     for (const rb of radios1) {
         if (rb.checked) {
-            qeu1value = rb.value;
+            que1value = rb.value;
             break;
         }
     }
 
-    const radios1 = document.querySelectorAll('input[name="que2"]');
-    let qeu2value;
+    const radios2 = document.querySelectorAll('input[name="que2"]');
+    let que2value;
     for (const rb of radios2) {
         if (rb.checked) {
-            qeu2value = rb.value;
+            que2value = rb.value;
             break;
         }
     };
-    const radios1 = document.querySelectorAll('input[name="que3"]');
-    let qeu3value;
+    const radios3 = document.querySelectorAll('input[name="que3"]');
+    let que3value;
     for (const rb of radios3) {
         if (rb.checked) {
-            qeu3value = rb.value;
+            que3value = rb.value;
             break;
         }
     };
-    const radios1 = document.querySelectorAll('input[name="que4"]');
-    let qeu4value;
+    const radios4 = document.querySelectorAll('input[name="que4"]');
+    let que4value;
     for (const rb of radios4) {
         if (rb.checked) {
-            qeu4value = rb.value;
+            que4value = rb.value;
             break;
         }
     };
-    const radios1 = document.querySelectorAll('input[name="que5"]');
-    let qeu5value;
+    const radios5 = document.querySelectorAll('input[name="que5"]');
+    let que5value;
     for (const rb of radios5) {
         if (rb.checked) {
-            qeu5value = rb.value;
+            que5value = rb.value;
             break;
         }
     };
 
-let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
-result = total / 5;
+    let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
+    result = total / 5;
 
-if (result > ) {
-  msg = "";
-} else if (result >= ) {
-  msg = "";
-} else {
-  msg = "You didn't input anything";
-}
+    if (result > 5) {
+        msg = "You answered mostly c you may have a kinesthetic learning style";
+      } else if (result >= 2.5) {
+        msg = "You answered mostly b, you may have an auditory learning style";
+      } else {
+        msg = "You answered mostly a, you may have a visual learning style";
+      }
 
-document.getElementById("result").innerHTML = msg
+    document.getElementById("result").innerHTML = msg
 };
 
 
