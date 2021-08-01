@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+.mainbox {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+#card-body{
+    height: 50%;
+    width: 50%;
+}
