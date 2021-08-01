@@ -2,6 +2,14 @@ body {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
+#que1,#que2,#que3,#que4,#que5,#results {
+    display:none;
+    width: 75%;
+}
 .mainbox {
     position: absolute;
     margin: auto;
@@ -13,3 +21,6 @@ body {
     width: 50%;
     background-color: aquamarine;
 }
+
+
+

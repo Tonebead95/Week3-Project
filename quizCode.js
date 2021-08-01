@@ -17,31 +17,6 @@ function showElement() {
     let id = eleId.id;
     document.getElementById(id).style.display = "inline-block";
 }
-
-function Start() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("que1").style.display = "inline-block";
-}
-function quest1() {
-    document.getElementById("que2").style.display = "none";
-    document.getElementById("que1").style.display = "inline-block";
-}
-function quest2() {
-    document.getElementById("que3").style.display = "none";
-    document.getElementById("que2").style.display = "inline-block";
-}
-function quest3() {
-    document.getElementById("que4").style.display = "none";
-    document.getElementById("que3").style.display = "inline-block";
-}
-function quest4() {
-    document.getElementById("que5").style.display = "none";
-    document.getElementById("que4").style.display = "inline-block";
-}
-function quest5() {
-    document.getElementById("results").style.display = "none";
-    document.getElementById("que5").style.display = "inline-block";
-}
  */
 
 function Start() {
@@ -68,6 +43,8 @@ function Start() {
     document.getElementById("que5").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
   }
+
+
 
 
 
