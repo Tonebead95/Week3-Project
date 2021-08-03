@@ -44,6 +44,7 @@ function quest5() {
     learningStyle()
     document.getElementById("que5").style.display = "none";
     document.getElementById("result").style.display = "inline-block";
+    
 }
 function back() {
     document.getElementById("result").style.display = "none";
@@ -95,16 +96,21 @@ function learningStyle() {
 
     let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
+    var img = document.createElement("img");
 
     if (result > 2) {
         msg = "You answered mostly c, you may have a kinesthetic learning style";
+        img.src = "images/Kinesthetic.jpg";
       } else if (result >= 1.5) {
         msg = "You answered mostly b, you may have an auditory learning style";
+        img.src = "images/Auditory.jpg";
       } else {
         msg = "You answered mostly a, you may have a visual learning style";
+        img.src = "images/Visual.jpg";
       }
 
-    document.getElementById("results").innerHTML = msg
+    document.getElementById("results").innerHTML = msg;
+    document.getElementById("results" = img.src;
 };
 
 
