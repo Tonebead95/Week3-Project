@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-#que1,#que2,#que3,#que4,#que5,#results {
+#que1,#que2,#que3,#que4,#que5,#result {
     display:none;
     width: 100%;
 }

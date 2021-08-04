@@ -17,7 +17,6 @@ function hideElement(id) {
 function showElement(id) {
     document.getElementById(id).style.display = "inline-block";
 }
- 
 
 function learningStyle() {
     const radios1 = document.querySelectorAll('input[name="ques1"]');
@@ -64,17 +63,22 @@ function learningStyle() {
 
     let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
+    var img = document.getElementById("images");
 
     if (result > 2) {
         msg = "You answered mostly c, you may have a kinesthetic learning style";
+        img.src = "images/Kinesthetic.jpg";
       } else if (result >= 1.5) {
         msg = "You answered mostly b, you may have an auditory learning style";
+        img.src = "images/Auditory.jpg";
       } else {
         msg = "You answered mostly a, you may have a visual learning style";
+        img.src = "images/Visual.jpg";
       }
 
     document.getElementById("result").innerHTML = msg
-};
+
+
 
 
 
