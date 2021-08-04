@@ -1,54 +1,21 @@
-/**
+/** 
  * Reuse code to show n hide questions
  * have nextQuestion as main funaction
  * queation 1 - 5 as extention function
  * result as last section
+*/
 
-function nextQuestion(id1,id2) {
+
+function nextQuestion(id1, id2) {
     hideElement(id1);
     showElement(id2);
 }
-function hideElement() {
-    let id = eleId.id;
+function hideElement(id) {
     document.getElementById(id).style.display = "none";
 }
 
-function showElement() {
-    let id = eleId.id;
+function showElement(id) {
     document.getElementById(id).style.display = "inline-block";
-}
- */
-
-function Start() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("que1").style.display = "inline-block";
-}
-function quest1() {
-    document.getElementById("que1").style.display = "none";
-    document.getElementById("que2").style.display = "inline-block";
-}
-function quest2() {
-    document.getElementById("que2").style.display = "none";
-    document.getElementById("que3").style.display = "inline-block";
-}
-function quest3() {
-    document.getElementById("que3").style.display = "none";
-    document.getElementById("que4").style.display = "inline-block";
-}
-function quest4() {
-    document.getElementById("que4").style.display = "none";
-    document.getElementById("que5").style.display = "inline-block";
-}
-
-function quest5() {
-    learningStyle()
-    document.getElementById("que5").style.display = "none";
-    document.getElementById("result").style.display = "inline-block";
-    
-}
-function back() {
-    document.getElementById("result").style.display = "none";
-    document.getElementById("intro").style.display = "inline-block";
 }
 
 function learningStyle() {
@@ -96,7 +63,7 @@ function learningStyle() {
 
     let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
-    var img = document.createElement("img");
+    var img = document.getElementById("images");
 
     if (result > 2) {
         msg = "You answered mostly c, you may have a kinesthetic learning style";
@@ -109,9 +76,9 @@ function learningStyle() {
         img.src = "images/Visual.jpg";
       }
 
-    document.getElementById("results").innerHTML = msg;
-    document.getElementById("results" = img.src;
-};
+    document.getElementById("result").innerHTML = msg
+
+
 
 
 
