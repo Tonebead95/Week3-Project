@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-md">
+    <div class="container-sm">
         <div class="mainbox">
             <div class=title>
                 <h1 class="text-center"> Learning Styles</h1>
@@ -31,7 +31,7 @@
                             syle is.<br>
                             Answer them as honstly as possible to get an accurate result.
                         </p>
-                        <button type="button" class="btn btn-outline-success" onclick= "nextQuestion('intro' , 'que1')">Start Quiz</button>
+                        <button type="button" class="btn btn-outline-success" onclick="nextQuestion('intro' , 'que1')">Start Quiz</button>
                     </div>
                     <form id="quizform" required>
                         <!--Que 1-->
@@ -138,7 +138,7 @@
                                         with it, etc.)</label>
                                 </div>
                                 <button type="button" class="btn btn-outline-success"
-                                    onclick="nextQuestion('que5' , 'result')">Results</button>
+                                    onclick="nextQuestion('que5' , 'result'); learningStyle();">Results</button>
                             </div>
                         </div>
                     </form>
@@ -147,13 +147,29 @@
                         <div class="card-body">
                             <h5 class="card-title">Reuslts</h5>
                             <p class="card-text">You're learning style is:</p>
-			    <p class="text-center" id="results"></p>
-                            <button type="button" class="btn btn-outline-success" onclick="nextQuestion('result' , 'intro')">Start Agian</button>
+                            <p class="text-center" id="results"></p>
+                            <div id="images-box"><img height="800" id="images" src=""></div>
+                            <button type="button" class="btn btn-outline-success" onclick="nextQuestion('result' , 'intro')">Start Again</button>
                         </div>
                     </div>
                 </div>
             </div>
-        <script src="quizCode.js" type="text/javascript"></script>
+            <script src="quizCode.js" type="text/javascript"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
