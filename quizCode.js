@@ -76,7 +76,7 @@ function learningStyle() {
         img.src = "images/Visual.jpg";
       }
 
-    document.getElementById("result").innerHTML = msg
+    document.getElementById("results").innerHTML = msg
 
 
 
