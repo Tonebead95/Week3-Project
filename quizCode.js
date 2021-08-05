@@ -1,12 +1,5 @@
-/** 
- * Reuse code to show n hide questions
- * have nextQuestion as main funaction
- * queation 1 - 5 as extention function
- * result as last section
-*/
 
-
-function nextQuestion(id1, id2) {
+function nextQuestion(id1,id2) {
     hideElement(id1);
     showElement(id2);
 }
@@ -17,6 +10,8 @@ function hideElement(id) {
 function showElement(id) {
     document.getElementById(id).style.display = "inline-block";
 }
+
+
 
 function learningStyle() {
     const radios1 = document.querySelectorAll('input[name="ques1"]');
@@ -63,27 +58,21 @@ function learningStyle() {
 
     let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
-    var img = document.getElementById("images");
+
+    const img = document.getElementById("images");
 
     if (result > 2) {
         msg = "You answered mostly c, you may have a kinesthetic learning style";
-        img.src = "images/Kinesthetic.jpg";
-      } else if (result >= 1.5) {
+        img.src = "images/Kinesthetic.png";
+    } else if (result >= 1.5) {
         msg = "You answered mostly b, you may have an auditory learning style";
-        img.src = "images/Auditory.jpg";
-      } else {
+        img.src = "images/Auditory.png";
+    } else {
         msg = "You answered mostly a, you may have a visual learning style";
-        img.src = "images/Visual.jpg";
-      }
-
-    document.getElementById("results").innerHTML = msg
+        img.src = "images/Visual.png";
+    }
 
 
+    document.getElementById("results").innerHTML = msg;
 
-
-
-
-
-/**
- * write calculation of results here
- */
+};
