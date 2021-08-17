@@ -11,51 +11,26 @@ function showElement(id) {
     document.getElementById(id).style.display = "inline-block";
 }
 
-
-
-function learningStyle() {
-    const radios1 = document.querySelectorAll('input[name="ques1"]');
-    let que1Value;
+function calculateAnswer(inputName) {
+    const radios1 = document.querySelectorAll(inputName);
+    let queValue;
     for (const rb of radios1) {
         if (rb.checked) {
-            que1Value = rb.value;
+            queValue = rb.value;
             break;
         }
     }
+    return Number(queValue);
+}
 
-    const radios2 = document.querySelectorAll('input[name="ques2"]');
-    let que2Value;
-    for (const rb of radios2) {
-        if (rb.checked) {
-            que2Value = rb.value;
-            break;
-        }
-    }
-    const radios3 = document.querySelectorAll('input[name="ques3"]');
-    let que3Value;
-    for (const rb of radios3) {
-        if (rb.checked) {
-            que3Value = rb.value;
-            break;
-        }
-    }
-    const radios4 = document.querySelectorAll('input[name="ques4"]');
-    let que4Value;
-    for (const rb of radios4) {
-        if (rb.checked) {
-            que4Value = rb.value;
-            break;
-        }
-    }
-    const radios5 = document.querySelectorAll('input[name="ques5"]');
-    let que5Value;
-    for (const rb of radios5) {
-        if (rb.checked) {
-            que5Value = rb.value;
-            break;
-        }
-    }
+function learningStyle() {
 
+    const que1Value = calculateAnswer('input[name="ques1"]')
+    const que2Value = calculateAnswer('input[name="ques2"]')
+    const que3Value = calculateAnswer('input[name="ques3"]')
+    const que4Value = calculateAnswer('input[name="ques4"]')
+    const que5Value = calculateAnswer('input[name="ques5"]')
+    
     let total = Number(que1Value) + Number(que2Value) + Number(que3Value) + Number(que4Value) + Number(que5Value);
     result = total / 5;
 
